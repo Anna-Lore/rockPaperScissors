@@ -21,6 +21,9 @@ function getComputerChoice() {
 function getHumanChoice() {
    let answer = prompt("Pick between rock, paper, or scissors:").toLowerCase();
    console.log(answer);
+   if (answer != "rock" || answer != "paper" || answer != "scissors"){
+    console.log("This is not a value answer. Please try again.");
+   }
    return answer;
 }
 
